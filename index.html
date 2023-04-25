@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>CV</title>
+    <style>
+        *
+        {
+            box-sizing:border-box;
+            margin: 0;
+        }
+        :root
+        {
+            --bg-color:#ffffff;
+            --info-section-color:#6ae3f8;
+            --contact-section-color:#444444;
+        }
+        html
+        {
+            display: flex;
+            justify-content: center;
+        }
+        body
+        {
+            border: 1px solid red;
+            display: flex;
+            width: 50%;
+        }
+        .info
+        {
+            border: 1px solid black;
+            width: 80%;
+        }
+        .info .intro-section
+        {
+            background: var(--info-section-color);
+            color: var(--bg-color);
+            display: flex;
+            flex-wrap: wrap;
+            font-family: Sans-serif;
+            padding: 2rem;
+            text-align: center;
+        }
+        .edu-exp-skills .skills .skills-list
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills .skills-list .data-list
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <section class="info">
+        <div class="intro-section">
+            <h1>GIVI ABESADZE</h1>
+            <h4>STUDENT</h4>
+            <p>
+                I am a hardworking, responsible and
+                ambitious individual with a great
+                passion for the Data and Software
+                Engineering. I am excited working with
+                data, creating data pipelines, do data
+                warehouses, ETL processes and
+                managing databases.
+            </p>
+        </div>
+        <div class="contact-sec">
+            <h2>CONTACT</h2>
+            <div class="contact" id="phone">
+                <h5>Phone</h5>
+                <p>(+995) 551 988828</p>
+            </div>
+            <div class="contact" id="email">
+                <h5>Email</h5>
+                <p>abesadzegivi9@gmail.com</p>
+            </div>
+            <div class="contact" id="address">
+                <h5>Address</h5>
+                <p>Tbilisi, Georgia</p>
+            </div>
+            <div class="contact" id="website">
+                <h5> <a href="https://giko20.github.io/Givi_Abe_Portfolio/" target=”_blank”>Website</a></h5>
+            </div>
+            <div class="contact" id="linkedin">
+                <h5><a href="https://www.linkedin.com/in/givi-abesadze" target=”_blank”>Linkedin</a></h5>
+            </div>
+            <div class="contact" id="github">
+                <h5><a href="https://github.com/Giko20" target=”_blank”>Github</a></h5>
+            </div>
+        </div>
+        <div class="language-sec">
+            <h2>LANGUAGE</h2>
+            <ul>
+                <li>Georgian</li>
+                <li>English</li>
+                <li>Russian</li>
+            </ul>
+        </div>
+    </section>
+    <section class="edu-exp-skills">
+        <div class="education">
+            <h2>EDUCATION & QUALIFICATIONS</h2>
+            <div class="edu-list">
+                <div class="edu">
+                    <div class="edu-1">
+                        <h4>Bachelor of Electrical Engineering</h4>
+                        <p>2019-2023</p>
+                    </div>
+                    <p>University of Georgia</p>
+                </div>
+                <div class="edu">
+                    <h4>DataOps (Advanced It Trainings)</h4>
+                    <p>Ilia State University</p>
+                </div>
+                <div class="edu">
+                    <h4>Designing and Implementing a Microsoft Azure AI Solution</h4>
+                    <p>New Horizons Computer Learning centers</p>
+                </div>
+            </div>
+        </div>
+        <div class="experience">
+            <h2>WORK EXPERIENCE</h2>
+            <div class="exp-list">
+                <div class="exp">
+                    <div class="exp-1">
+                        <h4>Invited Lecturer in UG College</h4>
+                        <p>2021 (Fall)</p>
+                    </div>
+                    <ul>
+                        <li>conducting lectures in Introduction to Computing Mathematics</li>
+                        <li>planning lectures, seminars/tutorials and learning materials</li>
+                        <li>checking and assessing student's work</li>
+                    </ul>
+                </div>
+                <div class="exp">
+                    <div class="exp-2">
+                        <h4>International project KM3NET official member of Gergian group</h4>
+                        <p>2021-present</p>
+                    </div>
+                    <ul>
+                        <li>working on big data</li>
+                        <li>writing some data pipelines in Python</li>
+                        <li>collaborating with group members on decision-making process</li>
+                        <li>attending seminars</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <h2>MY SKILLS</h2>
+            <div class="skills-list">
+                <div class="skill-1">
+                    <h3>Operating Systems</h3>
+                    <ul>
+                        <li>Windows</li>
+                        <li>Linux (ubuntu)</li>
+                    </ul>
+                </div>
+                <div class="skill-2">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Javascript</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+                <div class="skill-3">
+                    <h3>Version Control System</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>Github</li>
+                        <li>Gitlab</li>
+                        <li>Bitbucket</li>
+                    </ul>
+                </div>
+                <div class="skill-4">
+                    <h3>Data</h3>
+                    <div class="data-list">
+                        <div class="data-sql">
+                            <h4>SQL</h4>
+                            <ul>
+                                <li>PostgreSQL</li>
+                                <li>MySQL</li>
+                                <li>Microsoft SQLServer</li>
+                                <li>SQLite</li>
+                            </ul>
+                        </div>
+                        <div class="data-nosql">
+                            <h4>NoSQL</h4>
+                            <ul>
+                                <li>MongoDB</li>
+                                <li>IBM Cloudant</li>
+                            </ul>
+                        </div>
+                        <div class="data-bigdata">
+                            <h4>BigData</h4>
+                            <ul>
+                                <li>Spark (PySpark)</li>
+                                <li>Hadoop</li>
+                                <li>Hive</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-5">
+                    <h3>WEB</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap5</li>
+                        <li>Flask</li>
+                    </ul>
+                </div>
+                <div class="skill-6">
+                    <h3>Cloud</h3>
+                    <ul>
+                        <li>Microsoft Azure</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
