@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/animations.min.css" integrity="sha512-GKHaATMc7acW6/GDGVyBhKV3rST+5rMjokVip0uTikmZHhdqFWC7fGBaq6+lf+DOS5BIO8eK6NcyBYUBCHUBXA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>CV</title>
     <style>
         *
@@ -17,6 +19,7 @@
             --bg-color:#ffffff;
             --info-section-color:#6ae3f8;
             --contact-section-color:#444444;
+            --black-text-color:#131313;
         }
         html
         {
@@ -32,7 +35,9 @@
         .info
         {
             border: 1px solid black;
-            width: 80%;
+            display: flex;
+            flex-direction: column;
+            width: 90%;
         }
         .info .intro-section
         {
@@ -41,8 +46,38 @@
             display: flex;
             flex-wrap: wrap;
             font-family: Sans-serif;
-            padding: 2rem;
+            justify-content: center;
+            padding: 1.5rem;
             text-align: center;
+        }
+        .info .intro-section h1
+        {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .info .intro-section h4
+        {
+            margin-bottom: 30px;
+        }
+        .info .intro-section p
+        {
+            color: var(--black-text-color);
+        }
+        .info .contact-section
+        {
+            padding: 1.5rem;
+        }
+        .info .contact-section h2
+        {
+            border-bottom: 3px solid var(--black-text-color);
+        }
+        .info .language-section
+        {
+            padding: 1.5rem;
+        }
+        .edu-exp-skills
+        {
+            padding: 1.5rem;
         }
         .edu-exp-skills .skills .skills-list
         {
@@ -71,32 +106,32 @@
                 managing databases.
             </p>
         </div>
-        <div class="contact-sec">
-            <h2>CONTACT</h2>
+        <div class="contact-section">
+            <h2><i class="fa-solid fa-user"></i>CONTACT</h2>
             <div class="contact" id="phone">
-                <h5>Phone</h5>
+                <h5><i class="fa-solid fa-phone-volume"></i>Phone</h5>
                 <p>(+995) 551 988828</p>
             </div>
             <div class="contact" id="email">
-                <h5>Email</h5>
+                <h5><i class="fa-solid fa-envelope-open-text"></i>Email</h5>
                 <p>abesadzegivi9@gmail.com</p>
             </div>
             <div class="contact" id="address">
-                <h5>Address</h5>
+                <h5><i class="fa-solid fa-house-chimney"></i>Address</h5>
                 <p>Tbilisi, Georgia</p>
             </div>
             <div class="contact" id="website">
-                <h5> <a href="https://giko20.github.io/Givi_Abe_Portfolio/" target=”_blank”>Website</a></h5>
+                <h5><i class="fa-solid fa-globe"></i><a href="https://giko20.github.io/Givi_Abe_Portfolio/" target=”_blank”>Website</a></h5>
             </div>
             <div class="contact" id="linkedin">
-                <h5><a href="https://www.linkedin.com/in/givi-abesadze" target=”_blank”>Linkedin</a></h5>
+                <h5><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/givi-abesadze" target=”_blank”>Linkedin</a></h5>
             </div>
             <div class="contact" id="github">
-                <h5><a href="https://github.com/Giko20" target=”_blank”>Github</a></h5>
+                <h5><i class="fa-brands fa-github"></i><a href="https://github.com/Giko20" target=”_blank”>Github</a></h5>
             </div>
         </div>
-        <div class="language-sec">
-            <h2>LANGUAGE</h2>
+        <div class="language-section">
+            <h2><i class="fa-solid fa-earth-americas"></i>LANGUAGE</h2>
             <ul>
                 <li>Georgian</li>
                 <li>English</li>
@@ -106,7 +141,7 @@
     </section>
     <section class="edu-exp-skills">
         <div class="education">
-            <h2>EDUCATION & QUALIFICATIONS</h2>
+            <h2><i class="fa-solid fa-book-open"></i>EDUCATION & QUALIFICATIONS</h2>
             <div class="edu-list">
                 <div class="edu">
                     <div class="edu-1">
