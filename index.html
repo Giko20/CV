@@ -11,6 +11,7 @@
     <style>
         *
         {
+            font-family: sans-serif;
             box-sizing:border-box;
             margin: 0;
         }
@@ -20,6 +21,7 @@
             --info-section-color:#6ae3f8;
             --contact-section-color:#444444;
             --black-text-color:#131313;
+            --contact-light-gray: #9a9a9a;
         }
         html
         {
@@ -63,21 +65,83 @@
         {
             color: var(--black-text-color);
         }
-        .info .contact-section
+        .info .contact-section, .info .language-section
         {
+            background: var(--contact-section-color);
             padding: 1.5rem;
         }
-        .info .contact-section h2
+        .contact-section h2, .language-section h2
         {
-            border-bottom: 3px solid var(--black-text-color);
+            align-items: center;
+            border-bottom: 3px solid var(--bg-color);
+            color: var(--bg-color);
+            display: flex;
+            margin-bottom: 30px;
+            padding-bottom: 5px;
         }
-        .info .language-section
+        .contact-section h2 i, .language-section h2 i
         {
-            padding: 1.5rem;
+            color: var(--info-section-color);
+            margin-right: 10px;
+        }
+        .contact-section .contact
+        {
+            align-items: center;
+            display: flex;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .contact-section .contact i, .contact-section .contact h5
+        {
+            color: var(--bg-color);
+        }
+        .contact-section .contact p
+        {
+            color: var(--contact-light-gray);
+            font-size: 1rem;
+        }
+        .contact a
+        {
+            color: var(--bg-color);
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        .contact-section .contact:last-of-type
+        {
+            margin-bottom: 0px;
+        }
+        .contact i
+        {
+            margin-right: 20px;
+        }
+        .language-section h2 i
+        {
+            margin-right: 10px;
+        }
+        .language-section ul li
+        {
+            color: var(--contact-light-gray);
+            margin-bottom: 5px;
         }
         .edu-exp-skills
         {
             padding: 1.5rem;
+        }
+        .education
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .education h2, .experience h2, .skills h2
+        {
+            display: flex;
+            align-items: center;
+        }
+        .education h2 i, .experience h2 i, .skills h2 i
+        {
+            margin-right: 10px;
+            color: var(--info-section-color);
         }
         .edu-exp-skills .skills .skills-list
         {
@@ -109,25 +173,34 @@
         <div class="contact-section">
             <h2><i class="fa-solid fa-user"></i>CONTACT</h2>
             <div class="contact" id="phone">
-                <h5><i class="fa-solid fa-phone-volume"></i>Phone</h5>
-                <p>(+995) 551 988828</p>
+                <i class="fa-solid fa-phone-volume fa-lg"></i>
+                <div class="phone-number">
+                    <h5>Phone</h5>
+                    <p>(+995) 551 988828</p>
+                </div>
             </div>
             <div class="contact" id="email">
-                <h5><i class="fa-solid fa-envelope-open-text"></i>Email</h5>
-                <p>abesadzegivi9@gmail.com</p>
+                <i class="fa-solid fa-envelope-open-text fa-lg"></i>
+                <div class="email-address">
+                    <h5>Email</h5>
+                    <p>abesadzegivi9@gmail.com</p>
+                </div>
             </div>
             <div class="contact" id="address">
-                <h5><i class="fa-solid fa-house-chimney"></i>Address</h5>
-                <p>Tbilisi, Georgia</p>
+                <i class="fa-solid fa-house-chimney fa-lg"></i>
+                <div class="own-address">
+                    <h5>Address</h5>
+                    <p>Tbilisi, Georgia</p>
+                </div>
             </div>
             <div class="contact" id="website">
-                <h5><i class="fa-solid fa-globe"></i><a href="https://giko20.github.io/Givi_Abe_Portfolio/" target=”_blank”>Website</a></h5>
+                <h5><i class="fa-solid fa-globe fa-xl"></i><a href="https://giko20.github.io/Givi_Abe_Portfolio/" target=”_blank”>Website</a></h5>
             </div>
             <div class="contact" id="linkedin">
-                <h5><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/givi-abesadze" target=”_blank”>Linkedin</a></h5>
+                <h5><i class="fa-brands fa-linkedin fa-xl"></i><a href="https://www.linkedin.com/in/givi-abesadze" target=”_blank”>Linkedin</a></h5>
             </div>
             <div class="contact" id="github">
-                <h5><i class="fa-brands fa-github"></i><a href="https://github.com/Giko20" target=”_blank”>Github</a></h5>
+                <h5><i class="fa-brands fa-github fa-xl"></i><a href="https://github.com/Giko20" target=”_blank”>Github</a></h5>
             </div>
         </div>
         <div class="language-section">
@@ -141,7 +214,7 @@
     </section>
     <section class="edu-exp-skills">
         <div class="education">
-            <h2><i class="fa-solid fa-book-open"></i>EDUCATION & QUALIFICATIONS</h2>
+            <h2><i class="fa-solid fa-book-open"></i>EDUCATION & QUALIFICATION</h2>
             <div class="edu-list">
                 <div class="edu">
                     <div class="edu-1">
