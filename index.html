@@ -144,7 +144,7 @@
         }
         .education, .experience
         {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         .edu-list .edu
         {
@@ -160,11 +160,11 @@
             font-size: 15px;
             width: 300px
         }
-        .experience .exp-list .exp:first-of-type
+        .experience .exp-list .exp
         {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
-        .exp-list .exp .exp-1, .exp-list .exp .exp-2
+        .exp-list .exp .exp-1, .exp-list .exp .exp-2, .exp-list .exp .exp-3
         {
             display: flex;
             justify-content: space-between;
@@ -189,7 +189,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         .row-skills .skill-5, .skill-1, .skill-2, .skill-3, .skill-4, .skill-6, .skill-7, .skill-8, .data-sql, .data-nosql, .data-bigdata
         {
@@ -197,9 +197,13 @@
             display: flex;
             flex-direction: column;
         }
-        .edu-uni p, .exp-1 p, .exp-2 p
+        .edu-uni p, .exp-1 p, .exp-2 p, .exp-3 p
         {
             color: var(--contact-light-gray);
+        }
+        .exp-list .exp h5
+        {
+            color: var(--contact-section-color);
         }
     </style>
 </head>
@@ -285,26 +289,40 @@
             <h2><i class="fa-solid fa-briefcase"></i>WORK EXPERIENCE</h2>
             <div class="exp-list">
                 <div class="exp">
-                    <div class="exp-1">
-                        <h4>Invited Lecturer in UG College</h4>
-                        <p>2021 (Fall)</p>
+                    <div class="exp-3">
+                        <h4>BI Developer</h4>
+                        <p>2023Jun-present</p>
                     </div>
+                    <h5>Liberty Bank</h5>
                     <ul>
-                        <li>conducting lectures in Introduction to Computing Mathematics</li>
-                        <li>planning lectures, seminars/tutorials and learning materials</li>
-                        <li>checking and assessing student's work</li>
+                        <li>working on big data</li>
+                        <li>develop and maintain business intelligence solutions</li>
+                        <li>crafting and executing queries upon request for data</li>
                     </ul>
                 </div>
                 <div class="exp">
                     <div class="exp-2">
-                        <h4>International project KM3NET official member of Georgian group</h4>
+                        <h4>Official member of International project</h4>
                         <p>2021Sep-2023May</p>
                     </div>
+                    <h5>KM3NET Georgia</h5>
                     <ul>
                         <li>working on big data</li>
                         <li>writing some data pipelines in Python</li>
                         <li>collaborating with group members on decision-making process</li>
                         <li>attending seminars</li>
+                    </ul>
+                </div>
+                <div class="exp">
+                    <div class="exp-1">
+                        <h4>Invited Lecturer</h4>
+                        <p>2021 (Fall)</p>
+                    </div>
+                    <h5>UG College</h5>
+                    <ul>
+                        <li>conducting lectures in Introduction to Computing Mathematics</li>
+                        <li>planning lectures, seminars/tutorials and learning materials</li>
+                        <li>checking and assessing student's work</li>
                     </ul>
                 </div>
             </div>
