@@ -61,14 +61,15 @@
             font-size: 2rem;
             margin-bottom: 20px;
         }
-        .info .intro-section h4
+        .info .intro-section .intro-status
         {
             margin-bottom: 30px;
         }
+        
         .info .intro-section p
         {
             color: var(--black-text-color);
-            line-height: 1.3rem;
+            line-height: 1.5rem;
         }
         .info .contact-section, .info .language-section
         {
@@ -164,7 +165,7 @@
         {
             margin-bottom: 10px;
         }
-        .exp-list .exp .exp-1, .exp-list .exp .exp-2, .exp-list .exp .exp-3
+        .exp-list .exp .exp-1, .exp-list .exp .exp-2, .exp-list .exp .exp-3, .exp-list .exp .exp-4
         {
             display: flex;
             justify-content: space-between;
@@ -197,7 +198,7 @@
             display: flex;
             flex-direction: column;
         }
-        .edu-uni p, .exp-1 p, .exp-2 p, .exp-3 p
+        .edu-uni p, .exp-1 p, .exp-2 p, .exp-3 p, .exp-4 p
         {
             color: var(--contact-light-gray);
         }
@@ -211,7 +212,10 @@
     <section class="info">
         <div class="intro-section">
             <h1>GIVI ABESADZE</h1>
-            <h4>STUDENT</h4>
+            <div class="intro-status">
+                <h4>DATABASE DEVELOPER</h4>
+                <h5>( STUDENT )</h5>
+            </div>
             <p>
                 I am a hardworking, responsible and
                 ambitious individual with a great
@@ -270,6 +274,13 @@
             <div class="edu-list">
                 <div class="edu">
                     <div class="edu-uni">
+                        <h4>Master of Mathematics</h4>
+                        <p>2023-2025</p>
+                    </div>
+                    <p>University of Georgia</p>
+                </div>
+                <div class="edu">
+                    <div class="edu-uni">
                         <h4>Bachelor of Electrical Engineering</h4>
                         <p>2019-2023</p>
                     </div>
@@ -289,9 +300,21 @@
             <h2><i class="fa-solid fa-briefcase"></i>WORK EXPERIENCE</h2>
             <div class="exp-list">
                 <div class="exp">
+                    <div class="exp-4">
+                        <h4>Database Developer</h4>
+                        <p>2023Nov-present</p>
+                    </div>
+                    <h5>Liberty Bank</h5>
+                    <ul>
+                        <li>working on data pipelines, ETL processes with python, airflow</li>
+                        <li>developing SQL queries, procedures, functions in ORACLE, MSSQL SERVER, PostgreSQL</li>
+                        <li>participating in developing architecture</li>
+                    </ul>
+                </div>
+                <div class="exp">
                     <div class="exp-3">
                         <h4>BI Developer</h4>
-                        <p>2023Jun-present</p>
+                        <p>2023Jun-2023Oct</p>
                     </div>
                     <h5>Liberty Bank</h5>
                     <ul>
